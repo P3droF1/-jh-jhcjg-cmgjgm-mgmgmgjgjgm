@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        function cadastrarUsuario(){
+            console.log("A função está executando");
+            let nomeUsuario = document.getElementById("nomeUsuario").value;
+            console.log(nomeUsuario);
+
+            console.log("A função está executando");
+            let idadeUsuario = document.getElementById("idadeUsuario").value;
+            console.log(idadeUsuario);
+        }
+    </script>
+</head>
+<body>
+    <div class="formulario">
+        <label><b>Nome: </b></label>
+        <input type="text" id="nomeUsuario" placeholder="Digite aqui o seu nome...">
+        <br>
+        <label><b>Idade: </b></label><input type="number" id="idadeUsuario">
+        <br>
+        <select id="sexoUsuario">
+            <option>Masculino</option>
+            <option>Feminino</option>
+        </select>
+        <br>
+        <button onclick="cadastrarUsuario()">Cadastrar</button>
+    </div>
+</body>
+</html>
